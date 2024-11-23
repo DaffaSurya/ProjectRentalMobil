@@ -1,0 +1,215 @@
+*,
+html, body {
+ padding: 0;
+ margin: 0;
+}
+
+.div-navbar {
+    display: flex;
+    height: 12vh;
+    width: 100%;
+}
+
+.logo-navbar {
+    width: 20%;
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-navbar-list {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-list-nav {
+    display: flex;
+    gap: 10%;
+    width: 50%;
+    font-size: large;
+    font-weight: 500;
+    margin-left: 50%;
+    font-weight: 600;
+}
+
+.div-button-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    gap: 8%;
+}
+
+.after-login {
+    border: 1px black;
+    display: flex;
+    border: 2px black solid;
+    border-radius: 14px;
+    width: 180px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.img-profile {
+    width: 40px;
+    height: 35px;
+}
+
+.button-Daftar {
+    width: 120px;
+    height: 30px;
+    background-color: gray;
+    height: 45px;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 20px;
+    color: white;
+}
+
+.button-Login {
+    width: 120px;
+    height: 30px;
+    background-color: gray;
+    height: 45px;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 20px;
+    color: white;
+}
+
+.div-banner {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+}
+
+.div-carBg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-paragraph {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-bgcar {
+background-color: #1c1383;
+width: 450px;
+height: 400px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.article-banner {
+    margin-bottom: 5%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-banner {
+    height: 45px;
+    width: 150px;
+    background-color: rgba(0, 0, 255, 0.814);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    border-radius: 10px;
+    color: white;
+}
+
+.p-aboutus {
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-aboutUs {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs {
+    width: 80%;
+    height: 40vh;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    border: 2px black fixed;  
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.carousel-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.p-nama {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.p-deskrip {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: medium;
+ color: black;
+ width: 60%;
+ display: flex;
+}
+
+/* Css Register */
+
+.div-body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.div-img {
+    width: 50%;
+    height: 100vh;
+}
+
+.img-regis {
+    height: 738px;
+    width: 100%;
+}
+
