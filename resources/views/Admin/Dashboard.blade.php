@@ -23,8 +23,12 @@
         <div class="div-content">
             <!-- side bar -->
             <div class="sidebar">
+              <a href="{{route('Dashboard.Admin')}}">
                <p style="margin-top: 40px;">Dashboard</p>
+               </a>
+            <a href="{{route('AddMobil.Admin')}}">
                <p>Tambah Mobil</p>
+               </a>
             </div>
 
         <!-- sidebar end -->
@@ -147,7 +151,7 @@
     />
 
     <div>
-      <h3 class="text-lg font-medium text-Black">Daffa Surya Arrayan</h3>
+      <h3 class="text-lg font-medium text-Black">Selamat Datang, {{Auth::user() -> name}}</h3>
 
       <div class="flow-root">
         <ul class="-m-1 flex flex-wrap">
@@ -169,7 +173,7 @@
 
   <ul class="mt-4 space-y-2">
     <li>
-      <a href="#" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
+      <a class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
         <strong class="font-medium text-black">Project UAS</strong>
 
         <p class="mt-1 text-xs font-medium text-gray-600">
@@ -177,9 +181,12 @@
         </p>
       </a>
     </li>
+    <form action="{{route('Logout.Admin')}}" method="post">
+      @csrf
     <button class="button-container">
         Logout
     </button>
+    </form>
   </ul>
 </article>
            </div>

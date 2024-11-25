@@ -26,10 +26,15 @@ Route::post('/Register', [AuthController::class, 'Regispost']) -> name('Regis.po
 Route::get('/Login', [AuthController::class, 'Login']) -> name("Login");
 Route::post('/Login', [AuthController::class, 'Loginpost']) -> name('Login.post');
 Route::post('/Logout', [AuthController::class, 'Logout']) -> name('Logout');
+
 // Login and Logou end
 
 // admin page
 
 Route::get('/AdminDashboard', [AdminController::class, 'Dashboard']) -> name('Dashboard.Admin')-> middleware('Admin');
-   
+Route::post('/Logoutadmin', [AuthController::class, 'Logout_admin']) -> name('Logout.Admin');
+Route::get('/TambahMobil', [AdminController::class, 'AddMobil']) -> name('AddMobil.Admin');
+Route::post('/TambahMobil', [AdminController::class, 'post_add']) -> name('post.addmobil');
+
+Route::post('/Hapusmobil/{id}', [AdminController::class, 'Hapus']) -> name('hapus.add');
 // admin page end
