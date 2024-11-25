@@ -57,4 +57,9 @@ class AuthController extends Controller
         Auth::logout();
         return redirect(route('Login'));
     }
+
+    public function Logout_admin() {
+        Auth::logout();
+        return redirect(route('Login'));
+    }
 }
