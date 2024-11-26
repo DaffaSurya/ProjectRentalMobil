@@ -29,6 +29,9 @@
             <a href="{{route('AddMobil.Admin')}}">
                <p>Tambah Mobil</p>
                </a>
+               <a href="{{route('Topup_admin')}}">
+                <p>Tambah Points</p>
+               </a>
             </div>
 
         <!-- sidebar end -->
@@ -177,12 +180,11 @@
         <strong class="font-medium text-black">Project UAS</strong>
 
         <p class="mt-1 text-xs font-medium text-gray-600">
-       Project UAS ini mengangkat tema Website Rental Mobil yang menggunakan Framework Laravel 11
+          Project UAS ini mengangkat tema Website Rental Mobil yang menggunakan Framework Laravel 11
         </p>
       </a>
     </li>
     <form action="{{route('Logout.Admin')}}" method="post">
-      @csrf
     <button class="button-container">
         Logout
     </button>

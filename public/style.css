@@ -213,3 +213,58 @@ align-items: center;
     width: 100%;
 }
 
+
+/* rent car */
+    .div-datamobil {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-carouselRent {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-imageRent {
+        width: 450px;
+        height: 300px;
+        
+    }
+
+    .img-rent {
+        width: 550px;
+        height: 300px;
+        border-radius: 12px;
+        border: 1px solid black;
+    }
+
+    .div-merkrent {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight:500;
+    }
+
+    .div-buttonrent {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-rent {
+        width: 120px;
+        background-color: blue;
+        color: white;
+        font-weight: 600;
+        height: 80%;
+        border-radius: 15px;
+
+    }
+/*  */
