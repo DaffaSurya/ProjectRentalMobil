@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\addcar;
 use Illuminate\Http\Request;
 use PhpParser\Node\Expr\FuncCall;
 
@@ -20,6 +21,12 @@ class UserController extends Controller
    }
 
    public function Rental() {
-    return view('Rentcar');
+    $cars = addcar::all();
+    return view('Rentcar' , compact('cars'));
+   }
+
+   public function Detailsewa($id) {
+    $data = addcar::find($id);
+    return view('Detailsewa', compact('data'));
    }
 }

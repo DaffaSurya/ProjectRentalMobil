@@ -258,5 +258,79 @@ html, body {
 
 /* section menampilkan penambahan mobil end */
 
+.body-edit {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.preview-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+
+.buttonedit-update {
+    background-color: #007bff;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.buttonedit-update:hover {
+    background-color: #0056b3;
+}
+
+.buttonedit-cancel {
+    background-color: #6c757d;
+    color: white;
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
 
 

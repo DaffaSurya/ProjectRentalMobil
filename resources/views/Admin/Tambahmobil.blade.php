@@ -17,16 +17,18 @@
             <!-- Tambah mobil -->
             <div class="div-navbarAdmin">
                 <div class="navbar-admin">
-                    <p>RentCar</p>
+                    <p>Rent4Car</p>
                 </div>
 
                 <div class="navbar1admin">
                     <a href="{{route('Dashboard.Admin')}}">
                         <p style="font-size: 20px; font-weight:600">Dashboard</p>
                     </a>
+                   <form action="{{route('Logout.Admin')}}" method="post">
                     <button class="navbaradmin-button">
                         Logout
                     </button>
+                    </form>
                 </div>
             </div>
             <!-- tambah mobil end -->
@@ -121,10 +123,11 @@
                         <p>Poin: {{$data-> points}} points</p>
 
                         <div class="section-button">
+                           <a href="{{ route('edit.admin', $data -> id)}}">
                             <button class="button">
                                 Edit
                             </button>
-
+                            </a>
                            <form action="{{route('hapus.add', $data->id )}}"  method="post" enctype="multipart/form-data">
                             @csrf
                             <button class="button">

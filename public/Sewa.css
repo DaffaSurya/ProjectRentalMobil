@@ -1,0 +1,113 @@
+.body-sewa {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-section h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.right-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.right-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.confirm-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #5848c2;
+}
+
+.coins {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.coins span {
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}

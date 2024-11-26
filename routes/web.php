@@ -20,6 +20,7 @@ Route::get('/Coin', [UserController::class, 'Koin']) -> name('coin.user') -> mid
 // regis 
 Route::get('/Register', [AuthController::class, 'Register']) -> name('register.user');
 Route::post('/Register', [AuthController::class, 'Regispost']) -> name('Regis.post');
+Route::get('/Detailsewa/{id}', [UserController::class, 'Detailsewa']) -> name('Detail.sewa');
 // regis end
 
 // Login and Logout
@@ -33,8 +34,14 @@ Route::post('/Logout', [AuthController::class, 'Logout']) -> name('Logout');
 
 Route::get('/AdminDashboard', [AdminController::class, 'Dashboard']) -> name('Dashboard.Admin')-> middleware('Admin');
 Route::post('/Logoutadmin', [AuthController::class, 'Logout_admin']) -> name('Logout.Admin');
-Route::get('/TambahMobil', [AdminController::class, 'AddMobil']) -> name('AddMobil.Admin');
+Route::get('/TambahMobil', [AdminController::class, 'AddMobil']) -> name('AddMobil.Admin') -> middleware('Admin');
 Route::post('/TambahMobil', [AdminController::class, 'post_add']) -> name('post.addmobil');
 
 Route::post('/Hapusmobil/{id}', [AdminController::class, 'Hapus']) -> name('hapus.add');
+
+Route::get('/editCar/{id}', [AdminController::class, 'edit_admin']) -> name('edit.admin');
+Route::post('/editCar/{id}', [AdminController::class, 'edit_post']) -> name('editpost.admin');
+
+Route::get('/Topup', [AdminController::class, 'TopUp_admin']) -> name('Topup_admin');
+
 // admin page end
