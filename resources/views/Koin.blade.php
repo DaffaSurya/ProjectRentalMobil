@@ -5,12 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Layout Example</title>
     <link rel="stylesheet" href="koin.css">
+    <link href="{{ asset('style.css') }}" rel="stylesheet" type="text/css">
+   @vite('resources/css/app.css')
 </head>
 <body>
+    <div>
+        <!-- navbar -->
+     <div class="div-navbar">
+      <!-- div-logo -->
+    <div class="logo-navbar">
+    <p>Rent4car</p>
+    </div>
+   <!-- div logo end -->
+    <div class="div-navbar-list">
+      <div class="div-list-nav">
+      <p style="color: blue;">Dashboard</p>
+      <p>about us</p>
+      <a href="{{route('coin.user')}}">
+      <p>Lihat Koin</p>
+      </a>
+      </div>
+    </div>
+
+    <div class="div-button-nav">
+            @auth
+                <!-- Jika user sudah login -->
+                <div class="after-login">
+                  <img src="{{asset('profile/user.png')}}" alt="" class="img-profile">
+                  <p>Welcome, {{Auth::user()->name}}</p>
+                </div>
+                <form action="{{route('Logout')}}" method="post">
+                  @csrf
+                <button class="button-Daftar">
+                  Logout
+                </button>
+                </form>
+            @else
+
+            <a href="{{route('register.user')}}">
+            <button class="button-Daftar">
+              Sign-Up
+             </button>
+            </a> 
+
+      <a href="{{route('Login')}}">
+      <button class="button-Login">
+         Masuk
+      </button>
+      </a>
+            @endauth
+      
+    </div>
+    </div>
+        <!-- navbar end -->
+
+    <!-- Top Up content  -->
     <div class="container">
         <header class="header">
-            <h1>Card Layout Example</h1>
-            <p>Desain card grid dengan beberapa item untuk menampilkan gambar dan deskripsi.</p>
+            <h1>Top Up Koin</h1>
+            <p>Silahkan Top Up koin untuk sewa Mobil</p>
         </header>
         
         <div class="grid">
@@ -81,6 +134,9 @@
 
         <!-- Confirm Button -->
         <button class="confirm-btn">Confirm</button>
+    </div>
+
+    <!-- top up content end  -->
     </div>
 </body>
 </html>

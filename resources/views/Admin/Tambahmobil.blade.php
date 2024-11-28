@@ -25,6 +25,7 @@
                         <p style="font-size: 20px; font-weight:600">Dashboard</p>
                     </a>
                    <form action="{{route('Logout.Admin')}}" method="post">
+                    @csrf
                     <button class="navbaradmin-button">
                         Logout
                     </button>
