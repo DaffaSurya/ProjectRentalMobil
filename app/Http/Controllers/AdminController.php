@@ -47,13 +47,13 @@ class AdminController extends Controller
         $insert->save();
 
         return redirect()->route('AddMobil.Admin');
-    }   
+    }
 
     public function Hapus($id) {
         $content = addcar::find($id);
         $content->delete();
 
-        return redirect()->route('Dashboard.Admin');
+        return redirect()->route('post.addmobil');
     }
 
     public function edit_admin($id) {
