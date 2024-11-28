@@ -151,7 +151,7 @@ align-items: center;
     height: 40vh;
     background-color: whitesmoke;
     border-radius: 12px;
-    border: 2px black fixed;  
+    border: 2px black fixed;
 }
 
 .carousel {
@@ -231,7 +231,7 @@ align-items: center;
     .div-imageRent {
         width: 450px;
         height: 300px;
-        
+
     }
 
     .img-rent {

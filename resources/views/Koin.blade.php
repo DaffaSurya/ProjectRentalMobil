@@ -46,7 +46,7 @@
             <button class="button-Daftar">
               Sign-Up
              </button>
-            </a> 
+            </a>
 
       <a href="{{route('Login')}}">
       <button class="button-Login">
@@ -54,7 +54,7 @@
       </button>
       </a>
             @endauth
-      
+
     </div>
     </div>
         <!-- navbar end -->
@@ -65,26 +65,26 @@
             <h1>Top Up Koin</h1>
             <p>Silahkan Top Up koin untuk sewa Mobil</p>
         </header>
-        
+
         <div class="grid">
             <!-- Card 1 -->
             <div class="card">
                 <div class="card-content">
-                    <h2>Card Title 1</h2>
+                    <h2>Koint 100</h2>
                     <p>This is a description of the first item. It gives more details about the card.</p>
                 </div>
             </div>
             <!-- Card 2 -->
             <div class="card">
                 <div class="card-content">
-                    <h2>Card Title 2</h2>
+                    <h2>Koint 100</h2>
                     <p>This is a description of the second item. It gives more details about the card.</p>
                 </div>
             </div>
             <!-- Card 3 -->
             <div class="card">
                 <div class="card-content">
-                    <h2>Card Title 3</h2>
+                    <h2>Koint 100</h2>
                     <p>This is a description of the third item. It gives more details about the card.</p>
                 </div>
             </div>
