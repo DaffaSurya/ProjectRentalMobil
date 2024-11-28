@@ -185,6 +185,7 @@
       </a>
     </li>
     <form action="{{route('Logout.Admin')}}" method="post">
+      @csrf
     <button class="button-container">
         Logout
     </button>
