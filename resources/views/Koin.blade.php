@@ -70,14 +70,14 @@
             <!-- Card 1 -->
             <div class="card">
                 <div class="card-content">
-                    <h2>Koint 100</h2>
+                    <h2>Point</h2>
                     <p>This is a description of the first item. It gives more details about the card.</p>
                 </div>
             </div>
             <!-- Card 2 -->
             <div class="card">
                 <div class="card-content">
-                    <h2>Koint 100</h2>
+                    <h2>Point</h2>
                     <p>This is a description of the second item. It gives more details about the card.</p>
                 </div>
             </div>
