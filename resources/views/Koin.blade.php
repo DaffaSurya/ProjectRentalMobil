@@ -84,7 +84,7 @@
             <!-- Card 3 -->
             <div class="card">
                 <div class="card-content">
-                    <h2>Koint 100</h2>
+                    <h2>Point</h2>
                     <p>This is a description of the third item. It gives more details about the card.</p>
                 </div>
             </div>
