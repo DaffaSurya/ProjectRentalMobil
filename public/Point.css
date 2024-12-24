@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #15124C;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    /* background-color: #0056b3; */
+}
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    padding-bottom: 100px; /* Memberikan ruang di bawah untuk tombol agar tidak tertutup */
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* wrapper container */
+
+.wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    /* background: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7 ;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card image styling */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Confirm button styling */
+.confirm-btn {
+    position: fixed; /* Tombol tetap di posisi kanan bawah */
+    bottom: 30px; /* Memberikan jarak dari bawah */
+    right: 30px; /* Memberikan jarak dari kanan */
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.confirm-btn:focus {
+    outline: none;
+}
+
+.div-button {
+    display: flex;
+}
+
+.edit-point {
+    width: 70px;
+    height: 30px;
+}
+
+.delete-point {
+    width: 70px;
+    height: 30px;
+}

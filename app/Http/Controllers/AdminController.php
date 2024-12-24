@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\addcar;
+use App\Models\point;
+use App\Models\Resultrent;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
     public function Dashboard()
-    {
-        return view('Admin.Dashboard');
+    {   
+        $data = Resultrent::all();
+        return view('Admin.Dashboard' , compact('data'));
     }
 
     public function addMobil()
@@ -26,7 +29,7 @@ class AdminController extends Controller
             'kapasitas' => 'required',
             'point' => 'required|integer',
             'gambar' => 'required|mimes:jpg,png,pdf|max:2048', // Validasi gambar
-        ]);
+        ]); 
         $insert = new addcar();
         $file_path = public_path('uploads');
 
@@ -94,6 +97,34 @@ class AdminController extends Controller
     }
 
     public function TopUp_admin() {
-        return view('Admin.Pointadmin');
+        $data = point::all();
+        return view('Admin.Pointadmin', compact('data'));
     }
+
+    public function Pointadmin(Request $request) {
+        $request->validate([
+            'price' => 'required|integer',
+            'points' => 'required|integer'
+        ]);
+
+        $input = new point();
+
+        $input->Input_koin = $request->points;
+        $input->Harga_koin = $request->price;
+
+        $input->save();
+
+        return redirect()->route('Topup_admin');
+    }
+
+    public function Delete_Point($id) {
+        $Delete = point::find($id);
+        $Delete->delete();
+
+        return redirect()->route('Topup_admin');
+    }
+
+    
+    
+    
 }

@@ -29,11 +29,11 @@ html, body {
 
 .div-list-nav {
     display: flex;
-    gap: 10%;
-    width: 50%;
+    gap: 7%;
+    width: 85%;
     font-size: large;
     font-weight: 500;
-    margin-left: 50%;
+    margin-left: 20%;
     font-weight: 600;
 }
 

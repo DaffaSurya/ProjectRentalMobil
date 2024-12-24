@@ -24,9 +24,14 @@
         <a href="{{route('Home')}}">
       <p style="color: blue;">Dashboard</p>
       </a>
-      <p>about us</p>
       <a href="{{route('coin.user')}}">
       <p>Lihat Koin</p>
+      </a>
+      <a href="{{route('History')}}">
+      <p>History Rent</p>
+      </a>
+      <a href="{{route('History.pay')}}">
+        <p>History Payment</p>
       </a>
       </div>
     </div>
@@ -72,33 +77,39 @@
             <img src="/uploads/{{$data->photo}}" alt="Toyota Fortuner 2024">
         </div>
         <!-- Bagian Kanan -->
-        <div class="right-section">
-            <h3>{{$data -> merk}}</h3>
+      <form action="{{ route('Detail.post', $data -> id)}}" class="right-section" method="post">
+        @csrf
+        <div>
+            <!-- <h3>{{$data -> merk}}</h3> -->
+             <input type="text" value="{{$data -> merk}}" name="merk" style="border: none; outline: none; font-size: 28px;">
             <ul>
-                <li>{{$data -> jumlah_kapasitas}} kapasitas orang</li>
-                <li>{{$data -> No_plat}}</li>
+                <!-- <li>{{$data -> jumlah_kapasitas}} kapasitas orang</li> -->
+                <li> Kapasitas:
+                <input type="text" name="jumlah_kapasitas" value="{{$data -> jumlah_kapasitas}} orang" style="border: none; outline: none;">
+                </li>
+                <!-- <li>Plat Mobil : {{$data -> no_plat}}</li> -->
+                 <input type="text" value="{{$data -> no_plat}}" name="no_plat"  style="border: none; outline: none;">
                 <li>RPM At Max Power: 3400 RPM</li>
                 <li>RPM At Max Torque: 1600–2000 RPM</li>
                 <li>Kapasitas Tangki Bahan Bakar: 80 L</li>
 
-             <h2>Points: {{$data -> points}} untuk 1 hari sewa </h2>
+             <h2>Koin:  
+             <input type="number" value="{{$data-> points}}"  name="koin" style="border: none; outline:none; width: 70px;"> 
+             untuk 1 hari sewa </h2>
             </ul>
-            <form>
                 <div class="form-group">
                     <label for="start_date">Start date:</label>
-                    <input type="date" id="start_date">
+                    <input type="date" name="start_date">
                 </div>
                 <div class="form-group">
                     <label for="end_date">End date:</label>
-                    <input type="date" id="end_date">
+                    <input type="date" name="end_date">
                 </div>
-                <div class="coins">
-                    <span>300 coins</span>
-                </div>
-                <button type="submit" class="confirm-btn">Confirm</button>
-            </form>
+            <button class="confirm-btn" type="submit">Confirm</button>
+            </a>
         </div>
     </div>
+    </form>
     <!-- detail penyewaan end -->
     </div>
 </body>

@@ -25,10 +25,15 @@
           <a href="{{route('Home')}}">
             <p>Dashboard</p>
           </a>
-          <p>about us</p>
           <a href="{{route('coin.user')}}">
             <p>Lihat Koin</p>
           </a>
+          <a href="{{route('History')}}">
+            <p>History Rental</p>
+          </a>
+        <a href="{{route('History.pay')}}">
+        <p>History Payment</p>
+       </a>
         </div>
       </div>
 
@@ -84,7 +89,7 @@
                 <p>{{$car -> merk}}</p>
               </div>
               <div class="div-buttonrent">
-                <a href="{{ route('Detail.sewa', $car -> id) }}">
+                <a href="{{ route('Detail.sewa', $car -> id , ) }}">
                 <button class="button-rent">
                   Rental ->
                 </button>

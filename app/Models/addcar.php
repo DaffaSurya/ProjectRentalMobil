@@ -19,4 +19,6 @@ class addcar extends Model
 
 
     protected $table = 'Add';
+
+   
 }

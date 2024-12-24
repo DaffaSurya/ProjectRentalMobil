@@ -77,60 +77,20 @@
       <tr>
         <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Client Name</th>
         <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Car Type</th>
-        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Car Number</th>
-        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Status</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Status pembayaran</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Status penyewaan</th>
       </tr>
     </thead>
 
     <tbody class="divide-y divide-gray-200">
+      @foreach($data as $data)
       <tr>
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">John Doe</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Honda Brio</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">L 3112 Ren</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">deal</td>
+        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">{{$data->name_user}}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{$data->merk}}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{$data->paymentstatus}}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{$data->Rentstatus}}</td>
       </tr>
-
-      <tr>
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Herman douglas</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Honda Jazz</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">L 1322 END</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">pending</td>
-      </tr>
-
-      <tr>
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Wanto Jayo</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Xenia</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">B 4561 RL</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Pending</td>
-      </tr>
-
-      <tr>
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Wanto Jayo</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Xenia</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">B 4561 RL</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Pending</td>
-      </tr>
-
-      <tr>
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Wanto Jayo</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Xenia</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">B 4561 RL</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Pending</td>
-      </tr>
-
-      <tr>
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Wanto Jayo</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Xenia</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">B 4561 RL</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Pending</td>
-      </tr>
-
-      <tr>
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Wanto Jayo</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Xenia</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">B 4561 RL</td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">Pending</td>
-      </tr>
+      @endforeach
     </tbody>
   </table>
 </div>

@@ -46,4 +46,21 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function koin() {
+        return $this->hasOne(Koinuser::class);
+    }
+
+    public function Cars() {
+        return $this->hasOne(History::class);
+    }
+
+    public function carRentals()
+    {
+        return $this->hasMany(Rental::class);
+    }
+
+    public function Coins() {
+        return $this->hasOne(Resultrent::class);
+    }
 }

@@ -1,0 +1,29 @@
+.div-dataHistory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+
+
+/* to History payment page */
+.div-contentpayment {
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.div-datapay {
+    width: 60%;
+    border-radius: 12px;   
+}
+
+.div-Subjudul {
+    font-size: 30px;
+}
+
+/* to History payment page end */

@@ -22,10 +22,13 @@
     <div class="div-navbar-list">
       <div class="div-list-nav">
       <p style="color: blue;">Dashboard</p>
-      <p>about us</p>
       <a href="{{route('coin.user')}}">
       <p>Lihat Koin</p>
       </a>
+      <a href="{{route('History')}}">
+        <p>History Rental</p>
+      </a>
+      <p></p>
       </div>
     </div>
 

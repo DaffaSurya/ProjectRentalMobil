@@ -6,6 +6,8 @@
     <title>Card Layout Example</title>
     <link rel="stylesheet" href="koin.css">
     <link href="{{ asset('style.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    @vite('resources/css/app.css')
 </head>
 <body>
@@ -19,10 +21,17 @@
    <!-- div logo end -->
     <div class="div-navbar-list">
       <div class="div-list-nav">
-      <p style="color: blue;">Dashboard</p>
-      <p>about us</p>
+      <a href="{{ route('Dashboard')}}">
+      <p>Dashboard</p>
+      </a>
       <a href="{{route('coin.user')}}">
-      <p>Lihat Koin</p>
+      <p style="color: blue;">Lihat Koin</p>
+      </a>
+      <a href="{{route('History')}}">
+        <p>History rent</p>
+      </a>
+      <a href="{{route('History.pay')}}">
+        <p>History Payment</p>
       </a>
       </div>
     </div>
@@ -53,7 +62,7 @@
          Masuk
       </button>
       </a>
-            @endauth
+      @endauth
       
     </div>
     </div>
@@ -64,76 +73,31 @@
         <header class="header">
             <h1>Top Up Koin</h1>
             <p>Silahkan Top Up koin untuk sewa Mobil</p>
+
+            <h1>Total Saldo anda : {{$totalcoin}} koin</h1>
         </header>
         
         <div class="grid">
-            <!-- Card 1 -->
-            <div class="card">
+            <!-- Card 1 -->   
+            @foreach($data as $data)
+            <div class="card" data-aos= "fade-up">
+          
                 <div class="card-content">
-                    <h2>Card Title 1</h2>
-                    <p>This is a description of the first item. It gives more details about the card.</p>
-                </div>
+                  <a href="{{route('Topup.user', $data->id)}}">
+                    <h2>{{$data->Input_koin}} Koin</h2>
+                    <p>Rp. {{$data->Harga_koin}}</p>
+                    </a>
+                </div>     
             </div>
+            @endforeach
             <!-- Card 2 -->
-            <div class="card">
-                <div class="card-content">
-                    <h2>Card Title 2</h2>
-                    <p>This is a description of the second item. It gives more details about the card.</p>
-                </div>
-            </div>
             <!-- Card 3 -->
-            <div class="card">
-                <div class="card-content">
-                    <h2>Card Title 3</h2>
-                    <p>This is a description of the third item. It gives more details about the card.</p>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="card">
-                <div class="card-content">
-                    <h2>Card Title 4</h2>
-                    <p>This is a description of the fourth item. It gives more details about the card.</p>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="card">
-                <div class="card-content">
-                    <h2>Card Title 5</h2>
-                    <p>This is a description of the fifth item. It gives more details about the card.</p>
-                </div>
-            </div>
-            <!-- Card 6 -->
-            <div class="card">
-                <div class="card-content">
-                    <h2>Card Title 6</h2>
-                    <p>This is a description of the sixth item. It gives more details about the card.</p>
-                </div>
-            </div>
-            <!-- Card 7 -->
-            <div class="card">
-                <div class="card-content">
-                    <h2>Card Title 7</h2>
-                    <p>This is a description of the seventh item. It gives more details about the card.</p>
-                </div>
-            </div>
-            <!-- Card 8 -->
-            <div class="card">
-                <div class="card-content">
-                    <h2>Card Title 8</h2>
-                    <p>This is a description of the eighth item. It gives more details about the card.</p>
-                </div>
-            </div>
-            <!-- Card 9 -->
-            <div class="card">
-                <div class="card-content">
-                    <h2>Card Title 9</h2>
-                    <p>This is a description of the ninth item. It gives more details about the card.</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Confirm Button -->
-        <button class="confirm-btn">Confirm</button>
+            <script>
+           AOS.init();
+            </script>
+        
+        </div>
     </div>
 
     <!-- top up content end  -->

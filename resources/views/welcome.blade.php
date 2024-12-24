@@ -7,6 +7,8 @@
    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
    <link href="{{ asset('style.css') }}" rel="stylesheet" type="text/css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    @vite('resources/css/app.css')
 </head>
 <body>
@@ -22,9 +24,14 @@
     <div class="div-navbar-list">
       <div class="div-list-nav">
       <p style="color: blue;">Dashboard</p>
-      <p>about us</p>
       <a href="{{route('coin.user')}}">
       <p>Lihat Koin</p>
+      </a>
+      <a href="{{route('History')}}">
+      <p>History Rent</p>
+      </a>
+      <a href="{{route('History.pay')}}">
+        <p>History Payment</p>
       </a>
       </div>
     </div>
@@ -65,7 +72,7 @@
    <!-- banner mobil -->
    <div class="div-banner">
       <div class="div-carBg">
-         <div class="div-bgcar">
+         <div class="div-bgcar" data-aos="fade-up">
           <img src="{{ asset('images/car2.png')}}">
          </div>
       </div>
@@ -191,7 +198,7 @@
 
     <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       <li>
-        <a href="#" class="group block overflow-hidden">
+        <a href="#" class="group block overflow-hidden" data-aos="fade-right">
           <img
             src="https://images.unsplash.com/photo-1694278963099-92070bcc0f3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwYm13fGVufDB8fDB8fHww"
             alt=""
@@ -202,7 +209,7 @@
       </li>
 
       <li>
-        <a href="#" class="group block overflow-hidden">
+        <a href="#" class="group block overflow-hidden" data-aos="fade-right">
           <img
             src="https://images.unsplash.com/photo-1661023794309-483649098bc5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
@@ -213,7 +220,7 @@
       </li>
 
       <li>
-        <a href="#" class="group block overflow-hidden">
+        <a href="#" class="group block overflow-hidden" data-aos="fade-right">
           <img
             src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
@@ -223,7 +230,7 @@
       </li>
 
       <li>
-        <a href="#" class="group block overflow-hidden">
+        <a href="#" class="group block overflow-hidden" data-aos="fade-right">
           <img
             src="https://images.unsplash.com/photo-1701806244887-391677f29718?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
@@ -245,7 +252,7 @@
     </h2>
 
     <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8" data-aos="fade-right">
         <div class="flex items-center gap-4">
           <img
             alt=""
@@ -316,7 +323,7 @@
         </p>
       </blockquote>
 
-      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8" data-aos="fade-up">
         <div class="flex items-center gap-4">
           <img
             alt=""
@@ -387,7 +394,7 @@
         </p>
       </blockquote>
 
-      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8" data-aos="fade-left">
         <div class="flex items-center gap-4">
           <img
             alt=""
@@ -444,6 +451,11 @@
 <!-- testimonial end -->
 
 
+<!-- script AOS -->
+<script>
+  AOS.init();
+ </script>
+<!-- script AOS  -->
 <!-- footer -->
 <footer class="bg-gray-50">
   <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
